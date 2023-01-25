@@ -1,0 +1,66 @@
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-list__item {
+    background-color: var(--primary-background-color);
+    transition: box-shadow var(--transition);
+
+    &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    }
+}
+.project-list__wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-list__desc {
+    position: absolute;
+    top: 0;
+
+    @include font(400, 18px, 1.56);
+    letter-spacing: 0.03em;
+
+    color: var(--primary-background-color);
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform var(--transition);
+    overflow: auto;
+
+    padding: 63px 24px;
+
+    .project-list__item:hover & {
+        transform: translateY(0%);
+    }
+}
+
+.project-list__card {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    background-color: var(--primary-background-color);
+}
+
+.project-list__name {
+    @include font(null, 18px, 2.00);
+    letter-spacing: 0.06em;
+
+    color: var(--primary-text-color);
+
+    padding: 20px 24px 0px 24px;
+    margin-bottom: 4px;
+}
+
+.project-list__type {
+    @include font(null, 16px, 1.88);
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+
+    padding: 0 24px 20px 24px;
+}

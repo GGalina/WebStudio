@@ -1,0 +1,58 @@
+.clients__title {
+    @include font (700, 28px, 1.17);
+
+    text-align: center;
+    letter-spacing: 0.03em;
+        
+    margin-bottom: 30px; 
+
+    @include tablet {
+        margin-bottom: 50px;
+    }
+       
+    @include desktop {
+        @include font (700, 36px, 1.16);
+    }
+}
+.clients-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.clients-list__item {
+    height: 92px;
+    width: calc((100% - 30px) / 2);
+    @include tablet {
+        width: calc((100% - 60px) / 3);
+    }
+    
+    @include desktop {
+        width: 170px;
+    }
+}
+.clients-list__link {
+    @include centeredFlex;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: border-color var(--transition);
+
+    width: 100%;
+    height: 100%;
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color)
+    }
+}
+
+.clients-list__icon {
+    fill: #AFB1B8;
+    transition: fill var(--transition);
+
+    .clients-list__link:hover &,
+    .clients-list__link:focus & {
+        fill: var(--accent-color);
+    }
+}

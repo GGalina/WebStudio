@@ -1,0 +1,25 @@
+.logo {
+    font-family: var(--secondary-font);
+    @include font(700, 26px, 1.19);
+    letter-spacing: 0.03em;
+
+    color: #000000;
+
+    margin-right: 93px;
+}
+
+.logo__accent {
+    color: var(--accent-color);
+}
+.logo--light {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-background-color);
+
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    @include desktop {
+        display: block;
+    }
+}

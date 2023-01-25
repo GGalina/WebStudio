@@ -1,0 +1,41 @@
+.activity {
+    display: none;
+
+    @include desktop {
+        display: block;
+        padding-top: 0;
+    }
+}
+.activity__title {
+    @include font(null, 36px, 1.16);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.activity-list {
+        display: flex;
+        gap: 30px;
+}
+.activity-list__wrap {
+    position: relative;
+}
+.activity-list__desc {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    @include font(700, 14px, 1.14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-background-color);
+    background: rgba(47, 48, 58, 0.8);
+    transform: translateY(0%);
+    overflow: auto;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+}

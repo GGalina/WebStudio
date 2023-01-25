@@ -1,0 +1,96 @@
+.team {
+    background-color: #F5F4FA;
+}
+.team__title {
+    @include font(700, 28px, 1.17);
+    text-align: center;
+    letter-spacing: 0.03em;
+        
+    margin-bottom: 30px;
+
+    @include tablet {
+        margin-bottom: 50px;
+    }
+    @include desktop {
+        @include font (700, 36px, 1.16);
+    }
+
+}
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.team-list__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-background-color);
+    width: 100%;
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+}
+.team-list__name {
+    @include font(500, 16px, 1.18);
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.team-list__job {
+    @extend .team-list__name;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
+}
+.team-list__desc {
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @include desktop {
+        padding-bottom: 30px;
+    }
+}
+.soc-list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.soc-list__item {
+    width: 44px;
+    height: 44px;
+}
+.soc-list__link {
+    @include centeredFlex;
+
+    background-color: transparent;
+    transition: background-color var(--transition);
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+.soc-list__icon {
+    fill: #AFB1B8;
+    transition: fill var(--transition);
+
+    .soc-list__link:hover &,
+    .soc-list__link:focus & {
+        fill: #FFFFFF;
+    }
+}
