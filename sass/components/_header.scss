@@ -188,6 +188,7 @@
 
     width: 100%
 }
+
 .mob-soc__link {
     font-family: inherit;
     @include font(500, 18px, 1.22);
@@ -205,7 +206,10 @@
         width: 22px;
         left: 0;
     }
-
+}
+.mob-soc-list li:last-child a::after {
+    border: none;
+    width: 0;
 }
 .mob-menu-list__link.mob-menu-list__link--current {
     color: var(--accent-color);

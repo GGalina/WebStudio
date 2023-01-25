@@ -353,6 +353,11 @@ body {
   left: 0;
 }
 
+.mob-soc-list li:last-child a::after {
+  border: none;
+  width: 0;
+}
+
 .mob-menu-list__link.mob-menu-list__link--current {
   color: var(--accent-color);
 }
