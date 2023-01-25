@@ -147,8 +147,6 @@ body {
 }
 
 .header__container {
-  padding-top: 15px;
-  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,7 +172,7 @@ body {
   color: var(--accent-color);
 }
 
-.menu__link--current ::after {
+.menu__link--current::after {
   content: "";
   position: absolute;
   background: var(--accent-color);
@@ -306,7 +304,7 @@ body {
 
 .mob-contacts__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -325,6 +323,7 @@ body {
 .mob-soc {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .mob-soc__link {
@@ -333,7 +332,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
 }
 .mob-soc__link::after {
@@ -862,7 +861,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .subscribe__form {
@@ -933,6 +934,7 @@ body {
   transition: transform var(--transition);
   padding: 40px;
   width: 450px;
+  max-width: 100%;
   min-height: 609px;
 }
 .backdrop.is-hidden .modal {

@@ -19,8 +19,6 @@
     }
 }
 .header__container {
-    padding-top: 15px;
-    padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +45,7 @@
     }
 }
 .menu__link--current {
-    ::after {
+    &::after {
         content: '';
 
         position: absolute;
@@ -167,7 +165,7 @@
     color: var(--primary-text-color);
 }
 .mob-contacts__tel {
-    @include font(500, 34px, 1.17);
+    @include font(500, 24px, 1.17);
     letter-spacing: 0.02em;
     color: var(--accent-color);
     margin-bottom: 32px;
@@ -181,13 +179,16 @@
 .mob-soc {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
+    //width: 100%
 }
 .mob-soc__link {
     @include font(null, 18px, 1.22);
     letter-spacing: 0.02em;
     color: var(--accent-color);
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     &::after {
         content: '';
