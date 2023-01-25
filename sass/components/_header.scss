@@ -22,9 +22,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     @include tablet {
         justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 .menu__link {
@@ -178,17 +182,19 @@
 }
 .mob-soc {
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 
-    //width: 100%
+    width: 100%
 }
 .mob-soc__link {
-    @include font(null, 18px, 1.22);
+    font-family: inherit;
+    @include font(500, 18px, 1.22);
     letter-spacing: 0.02em;
     color: var(--accent-color);
     display: flex;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     &::after {
         content: '';
