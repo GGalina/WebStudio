@@ -195,7 +195,7 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     display: flex;
-    gap: 10px;
+    gap: 7px;
     align-items: center;
     &::after {
         content: '';
@@ -208,8 +208,7 @@
     }
 }
 .mob-soc-list li:last-child a::after {
-    border: none;
-    width: 0;
+    display: none;
 }
 .mob-menu-list__link.mob-menu-list__link--current {
     color: var(--accent-color);
