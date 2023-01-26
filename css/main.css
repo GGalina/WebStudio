@@ -255,6 +255,13 @@ body {
   background-color: transparent;
   border: none;
 }
+@media screen and (min-width: 768px) {
+  .menu-open,
+.menu-close {
+    min-width: 768px;
+    display: none;
+  }
+}
 
 .menu-close {
   display: block;
@@ -264,11 +271,6 @@ body {
 
 .menu-open__icon {
   fill: var(--primary-text-color);
-}
-@media screen and (min-width: 768px) {
-  .menu-open__icon {
-    display: none;
-  }
 }
 
 .mob-menu {

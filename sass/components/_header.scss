@@ -124,6 +124,12 @@
 .menu-close {
     background-color: transparent;
     border: none;
+
+    @include tablet {
+        min-width: 768px;
+        display: none;
+    }
+
 }
 .menu-close {
     display: block;
@@ -132,10 +138,6 @@
 }
 .menu-open__icon {
     fill: var(--primary-text-color);
-
-    @include tablet {
-        display: none;
-    }
 }
 .mob-menu {
     position: fixed;
