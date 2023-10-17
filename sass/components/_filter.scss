@@ -1,11 +1,10 @@
 .filter-list {
     display: flex;
     justify-content: center;
-
     gap: 8px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
-
 .filter-list__btn {
     font-family: var(--main-font);
     @include font(500, 16px, 1.62);

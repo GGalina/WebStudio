@@ -75,10 +75,10 @@
         align-items: flex-start;
         gap: 10px;
     }
+
     @include desktop {
         flex-direction: row;
         align-items: center;
-
     }
 }
 
@@ -129,7 +129,6 @@
         min-width: 768px;
         display: none;
     }
-
 }
 .menu-close {
     display: block;
@@ -151,13 +150,11 @@
     padding-right: 26px;
     z-index: 5;
     >.top-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
-
-    
 }
 .mob-menu-list {
     margin-bottom: 64px;
@@ -174,12 +171,14 @@
     @include font(500, 24px, 1.17);
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
     margin-bottom: 32px;
 }
 .mob-contacts__email {
     @include font(500, 24px, 1.16);
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    
     margin-bottom: 64px;
 }
 .mob-soc {

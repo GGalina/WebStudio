@@ -22,6 +22,7 @@
 .clients-list__item {
     height: 92px;
     width: calc((100% - 30px) / 2);
+    
     @include tablet {
         width: calc((100% - 60px) / 3);
     }

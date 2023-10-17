@@ -37,7 +37,7 @@
               <a href="./portfolio.html" class="menu__link link menu__link--current">Портфоліо</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link link">Контакти</a>
+              <a href="./contacts.html" class="menu__link link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -88,7 +88,7 @@
                 >
               </li>
               <li class="mob-menu-list__item">
-                <a href="" class="mob-menu-list__link link">Контакти</a>
+                <a href="./contacts.html" class="mob-menu-list__link link">Контакти</a>
               </li>
             </ul>
           </div>
@@ -158,24 +158,24 @@
           <h1 class="visually__hidden">Our projects</h1>
           <ul class="filter-list list">
             <li class="filter-list__item">
-              <button type="button" class="filter-list__btn">Усі</button>
+              <button type="button" class="filter-list__btn" data-category="all">Усі</button>
             </li>
             <li class="filter-list__item">
-              <button type="button" class="filter-list__btn">Веб-сайти</button>
+              <button type="button" class="filter-list__btn" data-category="web-site">Веб-сайти</button>
             </li>
             <li class="filter-list__item">
-              <button type="button" class="filter-list__btn">Додатки</button>
+              <button type="button" class="filter-list__btn" data-category="app">Додатки</button>
             </li>
             <li class="filter-list__item">
-              <button type="button" class="filter-list__btn">Дизайн</button>
+              <button type="button" class="filter-list__btn" data-category="design">Дизайн</button>
             </li>
             <li class="filter-list__item">
-              <button type="button" class="filter-list__btn">Маркетинг</button>
+              <button type="button" class="filter-list__btn" data-category="marketing">Маркетинг</button>
             </li>
           </ul>
           <!--Наші проєкти-->
           <ul class="project-list list">
-            <li class="project-list__item">
+            <li class="project-list__item web-site">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrap">
                   <img
@@ -196,7 +196,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list__item">
+            <li class="project-list__item design">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrap">
                   <img
@@ -219,7 +219,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list__item">
+            <li class="project-list__item app">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrap">
                   <img
@@ -240,7 +240,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list__item">
+            <li class="project-list__item marketing">
               <a href="" class="project-link link">
                 <div class="project-list__wrap">
                   <img
@@ -261,7 +261,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list__item">
+            <li class="project-list__item app">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrap">
                   <img
@@ -282,7 +282,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list__item">
+            <li class="project-list__item web-site">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrap">
                   <img
@@ -303,7 +303,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list__item">
+            <li class="project-list__item design">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrap">
                   <img
@@ -324,7 +324,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list__item">
+            <li class="project-list__item marketing">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrap">
                   <img
@@ -345,7 +345,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list__item">
+            <li class="project-list__item app">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrap">
                   <img
@@ -458,5 +458,6 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter-portfolio.js"></script>
   </body>
 </html>

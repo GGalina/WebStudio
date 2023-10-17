@@ -229,7 +229,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contacts__tel,
-.contacts__email {
+  .contacts__email {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -257,7 +257,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .menu-open,
-.menu-close {
+  .menu-close {
     min-width: 768px;
     display: none;
   }
@@ -796,7 +796,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .address-list__address, .address-list__email,
-.address-list__tel {
+  .address-list__tel {
     text-align: left;
   }
 }
@@ -1144,11 +1144,47 @@ body {
   margin-bottom: 30px;
 }
 
+.contact-page-form {
+  padding: 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .contact-page-form {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+}
+
+.contact-page-address-list__address,
+.contact-page-address-list__email,
+.contact-page-address-list__tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.contact-page-address-list__address:hover, .contact-page-address-list__address:focus,
+.contact-page-address-list__email:hover,
+.contact-page-address-list__email:focus,
+.contact-page-address-list__tel:hover,
+.contact-page-address-list__tel:focus {
+  color: var(--accent-color);
+}
+
+.contact-page-break {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.71;
+  text-align: center;
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .filter-list__btn {
@@ -1180,7 +1216,13 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .project-list {
+    justify-content: flex-start;
+  }
 }
 
 .project-list__item {
@@ -1190,6 +1232,16 @@ body {
 .project-list__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .project-list__item {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list__item {
+    width: calc(33.333% - 20px);
+  }
 }
 
 .project-list__wrap {

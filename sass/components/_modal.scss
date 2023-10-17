@@ -29,6 +29,7 @@
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0);
     }
+
     @include tablet {
         width: 450;
     }
@@ -175,6 +176,7 @@
             fill: var(--primary-background-color);
         }
     }  
+    
     @include desktop {
         @include font (400, 14px, 1.71);
     }

@@ -1,0 +1,25 @@
+.contact-page-form {
+    padding: 0 25px;
+
+    @include tablet {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+}
+.contact-page-address-list__address,
+.contact-page-address-list__email,
+.contact-page-address-list__tel {
+    @include font(500, 14px, 1.71);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.contact-page-break {
+    @include font(700, 30px, 1.71);
+    text-align: center;
+}
